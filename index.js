@@ -1,5 +1,5 @@
 'use strict';
-
+var config = require('node-yaml-config');
 
 var kraken = require('kraken-js'),
     app = {};
@@ -7,6 +7,12 @@ var kraken = require('kraken-js'),
 
 app.configure = function configure(nconf, next) {
     // Async method run on startup.
+
+    // load the opsworks configuration
+    var config = yaml_config.load(__dirname + '/shared/config.yml');
+
+    console.log(config);
+
     next(null);
 };
 
