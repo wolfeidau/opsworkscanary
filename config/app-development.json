@@ -1,7 +1,7 @@
 {
 // "host": "localhost",
 //
- "port": 80
+    "port": 8000
 //
 // "i18n": {
 //     "fallback": "en-US",
